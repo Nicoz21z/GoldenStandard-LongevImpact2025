@@ -45,8 +45,8 @@ load('Dati_Hackathon_Complessivi.mat');
 fields = fieldnames(dati_hackathon);
 
 %% ---------------- SUBJECT PARAMETERS ----------------
-h  = 1.64;   sensor_h  = 0.57*h;   % Controller (sensor high)
-h1 = 1.61;   sensor_h1 = 0.57*h1;  % Faller
+h  = 1.64;   sensor_h  = 0.53*h;   % Controller (sensor high)
+h1 = 1.61;   sensor_h1 = 0.53*h1;  % Faller
    %% ---------------- FILTERS PARAMETERS ----------------
 %acceleration filter
 fs = dati_hackathon.co001_base.Fs; 
