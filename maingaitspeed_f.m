@@ -83,7 +83,7 @@ for i = 1:numel(fields)-35
     accH_ML=accH_ML*g;
     accV=accV*g;
 
-  % --- 3. Calculate PSD to estimate the pitch frequency ---
+  % --- 3. Calculate PSD to estimate the peak frequency ---
     [Pxx, f] = pwelch(accV, [], [], [], fs);
     idx_range = (f >= 0.5 & f <= 3);
     [~, idx_peak] = max(Pxx(idx_range));
