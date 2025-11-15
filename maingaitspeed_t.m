@@ -7,8 +7,8 @@ load('Turns.mat');
 fields = fieldnames(dati_hackathon);
 
 %% ---------------- SUBJECT PARAMETERS ----------------
-h  = 1.64;   sensor_h  = 0.57*h;   % Controller (sensor high)
-h1 = 1.61;   sensor_h1 = 0.57*h1;  % Faller
+h  = 1.64;   sensor_h  = 0.53*h;   % Controller (sensor high)
+h1 = 1.61;   sensor_h1 = 0.53*h1;  % Faller
 %% ---------------- FILTERS PARAMETERS ----------------
 fs = dati_hackathon.co001_base.Fs; 
 % Cut-off frequency
@@ -235,3 +235,4 @@ T_test  = T(test_idx, :);
 % save in a file 
 writetable(T_train, 'GaitFeaturesTable_train.csv');
 writetable(T_test,  'GaitFeaturesTable_test.csv');
+
